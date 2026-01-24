@@ -60,7 +60,7 @@ if "free" in x:
 # 11 example
 
 x = "The best things in life are free!"
-print("expensive" not in x) #vice versa check is not here so return is False
+print("expensive" not in x) #vice versa check is not here so return is True
 
 # 12 example
 
@@ -201,4 +201,5 @@ print(y) # return index of first letter if this word contained in the string
 # 36 example
 x = "bro, bro, bro, bro"
 y = x.count("bro")
+
 print(y) # return 4
