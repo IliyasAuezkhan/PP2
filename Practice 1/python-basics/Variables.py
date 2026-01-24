@@ -50,7 +50,7 @@ print(x + y) #error
 
 x = 5
 y = 'Bro'
-print(x, y)
+print(x, y) #5 Bro
 
 # 5 example
 x = "Bro!" #global variable can be used everywhere
@@ -79,5 +79,6 @@ def myfunc():
 myfunc()
 
 print("Python is " + x)
+
 
 
