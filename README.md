@@ -1,2 +1,0 @@
-# PP2
-PP2 Practices
