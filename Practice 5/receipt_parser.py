@@ -14,7 +14,7 @@ products = re.findall(r"\d+\.\n(.+)", text)
 # 3 Посчитать итоговую сумму
 total = sum(float(p.replace(" ", "").replace(",", ".")) for p in prices)
 
-# 4. Извлечь дату и время
+# 4 Извлечь дату и время
 datetime = re.search(r"\d{2}\.\d{2}\.\d{4} \d{2}:\d{2}:\d{2}", text)
 datetime = datetime.group() if datetime else None
 
@@ -29,5 +29,6 @@ data = {
     "datetime": datetime,
     "payment": payment
 }
+
 
 print(json.dumps(data, ensure_ascii=False, indent=2))
