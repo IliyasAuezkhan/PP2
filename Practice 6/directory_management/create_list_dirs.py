@@ -1,5 +1,5 @@
 import os
-os.mkdir("Test.txt")
+os.mkdir("Test")
 os.makedirs("Sasha/go/to")
 print(os.listdir()) 
 print(os.getcwd()) #current
