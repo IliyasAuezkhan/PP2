@@ -1,0 +1,4 @@
+first_name;second_name;phone_number
+Aksha;Ayan;+77076253456
+Bolatov;Bro;+77083214587
+Iliyas;WW;+77099562314
