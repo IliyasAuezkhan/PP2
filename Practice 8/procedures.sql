@@ -15,7 +15,7 @@ DECLARE
     i INT;
 BEGIN
     FOR i IN 1..array_length(p_1_name, 1) LOOP
-        IF p_phone_number[i] ~ '^[+]{1}[0-9]{11}$' THEN
+        IF p_phone_number[i] ~ '^[+]{1}[0-9]{11}$' OR p_phone_number[i] ~ '^[8]{1}[0-9]{10}$' THEN
             INSERT INTO phonebook2 (first_name, second_name, phone_number) VALUES (p_1_name[i], p_2_name[i], p_phone_number[i]);
         ELSE
             RAISE NOTICE 'Invalid: %, %, %', p_1_name[i], p_2_name[i], p_phone_number[i];
