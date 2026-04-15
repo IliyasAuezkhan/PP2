@@ -48,5 +48,5 @@ class MickeyClock:
         minutes_rect = rotated_minutes.get_rect(center=self.center)
 
         
-        screen.blit(rotated_minutes, minutes_rect)   # правая (минуты)
-        screen.blit(rotated_seconds, seconds_rect)   # левая (секунды)
+        screen.blit(rotated_minutes, minutes_rect)   
+        screen.blit(rotated_seconds, seconds_rect)   
