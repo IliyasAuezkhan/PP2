@@ -12,7 +12,7 @@ def main():
     points = []
     drawing = False
     start_pos = None
-    last_pos = None # Переменная для хранения предыдущей позиции мыши
+    last_pos = None 
 
     while True:
         for event in pygame.event.get():
@@ -33,7 +33,7 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 drawing = True
                 start_pos = event.pos
-                last_pos = event.pos # Запоминаем начало линии
+                last_pos = event.pos 
 
             if event.type == pygame.MOUSEBUTTONUP:
                 if drawing:
@@ -43,20 +43,20 @@ def main():
                     elif mode == 'circle':
                         points.append(('circle', current_color, (start_pos, end_pos)))
                 drawing = False
-                last_pos = None # Сбрасываем позицию
+                last_pos = None 
 
             if event.type == pygame.MOUSEMOTION and drawing:
                 if mode == 'pen' or mode == 'eraser':
-                    # Ластик теперь тоже рисует линиями, но черным цветом (фон)
+                    
                     color = (0, 0, 0) if mode == 'eraser' else current_color
-                    # Сохраняем линию от прошлой точки до текущей
+                    
                     points.append(('line', color, (last_pos, event.pos), 3 if mode == 'pen' else 20))
-                    last_pos = event.pos # Текущая точка становится "прошлой" для следующего кадра
+                    last_pos = event.pos 
 
         screen.fill((0, 0, 0))
         
         for shape in points:
-            if shape[0] == 'line': # Новый тип отрисовки — линия
+            if shape[0] == 'line': 
                 pygame.draw.line(screen, shape[1], shape[2][0], shape[2][1], shape[3])
             elif shape[0] == 'rect':
                 s, e = shape[2]
