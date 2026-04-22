@@ -96,7 +96,7 @@ def runGame():
         
         if wormCoords[HEAD]['x'] == apple['x'] and wormCoords[HEAD]['y'] == apple['y']:
             score += apple['weight']
-            growth_pending += apple['weight']
+            growth_pending += apple['weight'] - 1
             
             
             if score >= COUNT:
