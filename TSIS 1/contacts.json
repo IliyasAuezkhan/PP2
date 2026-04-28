@@ -1,0 +1,35 @@
+[
+    {
+        "id": 3,
+        "first_name": "Auezkhan",
+        "second_name": "Iliyas",
+        "email": "bro@gmail.com",
+        "birthday": "2007-11-21",
+        "group": "Friend",
+        "phones": [
+            "+77088217181"
+        ]
+    },
+    {
+        "id": 1,
+        "first_name": "Aksha",
+        "second_name": "Ayan",
+        "email": "ivan@gmail.com",
+        "birthday": "1995-05-15",
+        "group": "Family",
+        "phones": [
+            "+77011112233"
+        ]
+    },
+    {
+        "id": 2,
+        "first_name": "Zhiger",
+        "second_name": "Bolatov",
+        "email": "zhiger@gmail.com",
+        "birthday": "1990-10-25",
+        "group": "Work",
+        "phones": [
+            "+77022223344"
+        ]
+    }
+]
